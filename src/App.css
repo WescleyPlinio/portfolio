@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+#root {
+    width: 100%;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.md:hidenn {
+    transition: 0.3s;
+}
