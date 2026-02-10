@@ -7,7 +7,7 @@ const SimpleNavbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY >= 400) {
+            if (window.scrollY >= 180) {
                 setScrolled(true);
             } else {
                 setScrolled(false);
@@ -20,7 +20,7 @@ const SimpleNavbar = () => {
     }, []);
 
   return (
-    <nav className={`${scrolled ? "bg-gray-900" : "bg-gray-900/10 pt-5"} fixed top-0 w-screen transition-all duration-350 ease-in-out`}>
+    <nav className={`${scrolled ? "bg-gray-900" : "bg-gray-900/10 pt-5"} fixed top-0 w-screen z-50 transition-all duration-350 ease-in-out`}>
       <div className="px-4">
         <div className="flex justify-center h-20 items-center">
 
