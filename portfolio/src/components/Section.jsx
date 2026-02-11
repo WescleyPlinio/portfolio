@@ -1,8 +1,8 @@
 import FadeIn from "./FadeIn";
 
-export default function Section({ title, textOne, textTwo }) {
+export default function Section({ title, textOne, textTwo, children, id }) {
   return (
-    <>
+    <section id={id} className="my-30">
       <FadeIn>
         <h1 className="text-center text-purple-400 text-5xl mb-20">
           {title}
@@ -20,6 +20,10 @@ export default function Section({ title, textOne, textTwo }) {
           {textTwo}
         </p>
       </FadeIn>
-    </>
+
+      <FadeIn>
+        {children}
+      </FadeIn>
+    </section>
   );
 }
