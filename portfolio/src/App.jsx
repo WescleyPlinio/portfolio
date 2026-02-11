@@ -12,11 +12,8 @@ function App() {
         <Navbar />
         <Hero element={<StarsBackground/>}></Hero>
       </header>
-      <main className='container border-t-2 border-gray-900/50 p-10 mx-auto bg-gray-950'>
-        <Section/>
-        <div className='h-96'>
-          <p className="text-white"></p>
-        </div>
+      <main className='container p-10 mx-auto my-30 bg-gray-950'>
+        <Section title="Quem sou eu?" textOne="Me chamo Wescley, técnico em informática para internet." textTwo="Me formei no IFRN, e lá me tornei um profissional full-stack."/>
       </main>
     </>
   )

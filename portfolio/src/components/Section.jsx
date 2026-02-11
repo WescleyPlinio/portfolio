@@ -1,8 +1,25 @@
-export default function Section (){
-    return(
-        <>
-            <h1 className="text-purple-400 text-4xl mb-6">Quem sou eu?</h1>
-            <p className="text-white">Texto guloso sobre mim</p>
-        </>
-    )
+import FadeIn from "./FadeIn";
+
+export default function Section({ title, textOne, textTwo }) {
+  return (
+    <>
+      <FadeIn>
+        <h1 className="text-center text-purple-400 text-5xl mb-20">
+          {title}
+        </h1>
+      </FadeIn>
+
+      <FadeIn>
+        <p className="text-center text-white text-2xl mb-15">
+          {textOne}
+        </p>
+      </FadeIn>
+
+      <FadeIn>
+        <p className="text-center text-white text-2xl">
+          {textTwo}
+        </p>
+      </FadeIn>
+    </>
+  );
 }
