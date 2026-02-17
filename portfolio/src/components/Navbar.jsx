@@ -21,7 +21,7 @@
           });
         },
         {
-          threshold: 0.51,
+          threshold: 0.8,
         }
       );
 

@@ -15,15 +15,27 @@ export default function Icons() {
             </div>
 
             <div className="p-5 border-2 border-purple-400 rounded-4xl">
-                <i className="devicon-python-plain text-white text-8xl"></i>
-            </div>
-
-            <div className="p-5 border-2 border-purple-400 rounded-4xl">
                 <i className="devicon-bootstrap-plain text-white text-8xl"></i>
             </div>
 
             <div className="p-5 border-2 border-purple-400 rounded-4xl">
+                <i className="devicon-tailwindcss-original text-white text-8xl"></i>
+            </div>
+
+            <div className="p-5 border-2 border-purple-400 rounded-4xl">
+                <i className="devicon-python-plain text-white text-8xl"></i>
+            </div>
+
+            <div className="p-5 border-2 border-purple-400 rounded-4xl">
                 <i className="devicon-django-plain text-white text-8xl"></i>
+            </div>
+
+            <div className="p-5 border-2 border-purple-400 rounded-4xl">
+                <i className="devicon-djangorest-plain text-white text-8xl"></i>
+            </div>
+
+            <div className="p-5 border-2 border-purple-400 rounded-4xl">
+                <i className="devicon-flask-original text-white text-8xl"></i>
             </div>
 
             <div className="p-5 border-2 border-purple-400 rounded-4xl">
@@ -39,11 +51,27 @@ export default function Icons() {
             </div>
 
             <div className="p-5 border-2 border-purple-400 rounded-4xl">
-                <i className="devicon-djangorest-plain text-white text-8xl"></i>
+                <i className="devicon-linux-plain text-white text-8xl"></i>
             </div>
 
             <div className="p-5 border-2 border-purple-400 rounded-4xl">
-                <i className="devicon-linux-plain text-white text-8xl"></i>
+                <i className="devicon-nginx-original text-white text-8xl"></i>
+            </div>
+
+            <div className="p-5 border-2 border-purple-400 rounded-4xl">
+                <i className="devicon-apache-plain text-white text-8xl"></i>
+            </div>
+
+            <div className="p-5 border-2 border-purple-400 rounded-4xl">
+                <i className="devicon-googlecloud-plain text-white text-8xl"></i>
+            </div>
+
+            <div className="p-5 border-2 border-purple-400 rounded-4xl">
+                <i className="devicon-xml-plain text-white text-8xl"></i>
+            </div>
+
+            <div className="p-5 border-2 border-purple-400 rounded-4xl">
+                <i className="devicon-figma-plain text-white text-8xl"></i>
             </div>
 
         </div>
