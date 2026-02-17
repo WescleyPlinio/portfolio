@@ -16,10 +16,10 @@ function App() {
       </header>
       <main className='container p-10 mx-auto bg-gray-950'>
 
-        <Section title="Quem sou eu?" id="index"
-        textOne="Me chamo Wescley, técnico em informática para internet." textTwo="Me formei no IFRN, e lá me tornei um profissional full-stack." />
+        <Section title="Quem sou eu?" id="about"
+        textOne="Me chamo Wescley, técnico em informática para internet pelo IFRN. Sou apaixonado por tecnologia e por desenvolver soluções usando códigos." textTwo="O IFRN me transformou em um profissional com conhecimento em desenvolvimento full-stack, análise de dados e design UI/UX." />
 
-        <Section title="Habilidades" id="skills" children={
+        <Section title="Habilidades" textOne="Possuo conhecimento nas seguintes tecnologias:" id="skills" children={
           <div className="overflow-hidden">
               <div className="flex gap-4 animate-infinite-slider w-max">
                 <Icons />
