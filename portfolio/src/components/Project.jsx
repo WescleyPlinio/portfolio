@@ -3,7 +3,7 @@ import FadeIn from "./FadeIn"
 export default function Project({ title, text, imgUrl, projectUrl }) {
     return (
         <FadeIn>
-            <div className="border border-purple-400 rounded-2xl">
+            <div className="border border-purple-400 rounded-2xl h-full">
                 <div className="w-full">
                     <img src={`/portfolio/imgs/${imgUrl}`} className="rounded-t-2xl h-70 w-full object-cover object-center" alt="Projeto" />
                 </div>
