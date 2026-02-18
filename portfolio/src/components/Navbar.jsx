@@ -21,7 +21,8 @@
           });
         },
         {
-          threshold: 0.8,
+          threshold: 0.3,
+          rootMargin: "-80px 0px 0px 0px",
         }
       );
 
@@ -56,11 +57,11 @@
         <div className="px-4">
           <div className="flex justify-center items-center h-20">
 
-            <div className="flex gap-6 border border-purple-400 py-3 px-9 rounded-xl max-w-screen">
-              <a href="#index" className={`transition-all duration-300 ease-in-out text-purple-400 hover:text-purple-300 hover:underline ${active === "index" ? "text-purple-400 underline border-purple-400" : "text-white"}`}>Início</a>
-              <a href="#about" className={`transition-all duration-300 ease-in-out text-purple-400 hover:text-purple-300 hover:underline ${active === "about" ? "text-purple-400 underline border-purple-400" : "text-white"}`}>Sobre</a>
-              <a href="#skills" className={`transition-all duration-300 ease-in-out text-purple-400 hover:text-purple-300 hover:underline ${active === "skills" ? "text-purple-400 underline border-purple-400" : "text-white"}`}>Habilidades</a>
-              <a href="#projects" className={`transition-all duration-300 ease-in-out text-purple-400 hover:text-purple-300 hover:underline ${active === "projects" ? "text-purple-400 underline border-purple-400" : "text-white"}`}>Projetos</a>
+            <div className="flex gap-6 border border-purple-400 py-3 px-6 rounded-xl max-w-screen">
+              <a href="#index" className={`transition-all duration-300 ease-in-out text-purple-400 hover:text-purple-300 hover:border-b-2 ${active === "index" ? "text-purple-400 border-b-2 border-purple-400" : "text-white"}`}>Início</a>
+              <a href="#about" className={`transition-all duration-300 ease-in-out text-purple-400 hover:text-purple-300 hover:border-b-2 ${active === "about" ? "text-purple-400 border-b-2 border-purple-400" : "text-white"}`}>Sobre</a>
+              <a href="#skills" className={`transition-all duration-300 ease-in-out text-purple-400 hover:text-purple-300 hover:border-b-2 ${active === "skills" ? "text-purple-400 border-b-2 border-purple-400" : "text-white"}`}>Habilidades</a>
+              <a href="#projects" className={`transition-all duration-300 ease-in-out text-purple-400 hover:text-purple-300 hover:border-b-2 ${active === "projects" ? "text-purple-400 border-b-2 border-purple-400" : "text-white"}`}>Projetos</a>
             </div>
 
           </div>

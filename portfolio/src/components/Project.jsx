@@ -4,8 +4,8 @@ export default function Project({ title, text, imgUrl, projectUrl }) {
     return (
         <FadeIn>
             <div className="border border-purple-400 rounded-2xl h-full">
-                <div className="w-full">
-                    <img src={`/portfolio/imgs/${imgUrl}`} className="rounded-t-2xl h-70 w-full object-cover object-center" alt="Projeto" />
+                <div className="w-full aspect-video">
+                    <img src={`/portfolio/imgs/${imgUrl}`} className="rounded-t-2xl h-full w-full object-cover object-center" alt="Projeto" />
                 </div>
                 <div className="p-5">
                     <h1 className="text-purple-400 font-bold text-lg">{title}</h1>
