@@ -21,9 +21,8 @@ export default function Section({ title, textOne, textTwo, children, id }) {
         </p>
       </FadeIn>
 
-      <FadeIn>
-        {children}
-      </FadeIn>
+      {children}
+
     </section>
   );
 }

@@ -11,7 +11,7 @@ export default function FadeIn({children}) {
                     setVisible(true);
                 }
             }, {
-            threshold: 1,
+            threshold: 0.8,
         });
 
         if (ref.current) {
