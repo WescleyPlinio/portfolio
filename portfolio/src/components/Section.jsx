@@ -2,7 +2,7 @@ import FadeIn from "./FadeIn";
 
 export default function Section({ title, textOne, textTwo, children, id }) {
   return (
-    <section id={id} className="my-40">
+    <section id={id} className="my-60">
       <FadeIn>
         <h1 className="text-purple-400 text-3xl sm:text-5xl mb-10">
           {title}

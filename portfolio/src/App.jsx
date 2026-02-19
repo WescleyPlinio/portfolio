@@ -30,12 +30,12 @@ function App() {
             </div>
         }/>
 
-        <Section title="Projetos" id="projects" children={
+        <Section title="Projetos" textOne="Projetos pessoais e desenvolvidos no IFRN:" id="projects" children={
           <div className="grid gap-4 grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
 
-            <Project title="Repex" text="Sistema robusto desenvolvido usando Python e Django. Conta com autenticação, consumo de API do IFRN para login social, paginação com Ajax, acesso a funcionalidades herdado por grupos e total personalização so site via formulários." imgUrl="print.png" projectUrl="github.com/IFRN-SPP/repex"/>
+            <Project title="Repex" text="Sistema robusto desenvolvido usando Python e Django. Conta com autenticação, consumo de API do IFRN para login social, paginação com Ajax, acesso a funcionalidades herdado por grupos e total personalização do site via formulários." imgUrl="print.png" projectUrl="github.com/IFRN-SPP/repex"/>
 
-            <Project title="Biblioteca Manager" text="Sistema full-satck usando Python, Django, Vite e React. Consiste em uma biblioteca com crud de livros, autores e editoras. O cliente React consome os endpoints da API local feita usando o Django Rest Framework." imgUrl="print2.png" projectUrl="github.com/WescleyPlinio/pos-2025-projeto-final"/>
+            <Project title="Biblioteca Manager" text="Sistema full-stack usando Python, Django, Vite e React. Consiste em uma biblioteca com crud de livros, autores e editoras. O cliente React consome os endpoints da API local feita usando o Django Rest Framework." imgUrl="print2.png" projectUrl="github.com/WescleyPlinio/pos-2025-projeto-final"/>
             
             <Project title="IF Boletim" text="Cliente desenvolvido com Python e Flask. Consiste em uma aplicação que mostra o boletim completo do usuário autenticado, usando a API do IFRN para autenticação e resgatar as notas." imgUrl="print3.png" projectUrl="github.com/WescleyPlinio/pos-2025-projeto01"/>
             
