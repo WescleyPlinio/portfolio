@@ -1,75 +1,18 @@
 @import "tailwindcss";
 
-#root {
-    width: 100%;
-    font-family: "Quicksand", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
+@theme {
+  --font-special-gothic: "Special Gothic Condensed One", sans-serif;
 }
 
-.md:hidenn {
-    transition: 0.3s;
-}
+@theme {
+  --animate-infinite-slider: infinite-slider 40s linear infinite;
 
-.stars-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    pointer-events: none;
-}
-
-.star {
-    position: absolute;
-    background-color: rgba(243, 6, 239, 0.339);
-    border-radius: 50%;
-    box-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
-}
-
-@keyframes twinkle {
-
-    0%,
+  @keyframes infinite-slider {
+    0% {
+      transform: translateX(0);
+    }
     100% {
-        opacity: 0.3;
+      transform: translateX(-50%);
     }
-
-    50% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.fade-in-up {
-  animation: fadeInUp 1s ease-out forwards;
-}
-
-::-webkit-scrollbar {
-    display: none;
-}
-
-@keyframes infinite-slider {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-
-.animate-infinite-slider {
-  animation: infinite-slider 30s linear infinite;
 }

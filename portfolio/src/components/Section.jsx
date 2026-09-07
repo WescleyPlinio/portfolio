@@ -4,7 +4,7 @@ export default function Section({ title, textOne, textTwo, children, id }) {
   return (
     <section id={id} className="my-60">
       <FadeIn>
-        <h1 className="text-purple-400 text-3xl sm:text-5xl mb-10">
+        <h1 className="text-blue-300 shadow-blue-300 font-special-gothic text-3xl sm:text-7xl mb-10">
           {title}
         </h1>
       </FadeIn>

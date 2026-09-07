@@ -57,11 +57,11 @@
         <div className="px-4">
           <div className="flex justify-center items-center h-20">
 
-            <div className="flex gap-6 border border-purple-400 py-3 px-6 rounded-xl max-w-screen">
-              <a href="#index" className={`transition-all duration-300 ease-in-out text-purple-400 hover:text-purple-300 hover:border-b-2 ${active === "index" ? "text-purple-400 border-b-2 border-purple-400" : "text-white"}`}>Início</a>
-              <a href="#about" className={`transition-all duration-300 ease-in-out text-purple-400 hover:text-purple-300 hover:border-b-2 ${active === "about" ? "text-purple-400 border-b-2 border-purple-400" : "text-white"}`}>Sobre</a>
-              <a href="#skills" className={`transition-all duration-300 ease-in-out text-purple-400 hover:text-purple-300 hover:border-b-2 ${active === "skills" ? "text-purple-400 border-b-2 border-purple-400" : "text-white"}`}>Habilidades</a>
-              <a href="#projects" className={`transition-all duration-300 ease-in-out text-purple-400 hover:text-purple-300 hover:border-b-2 ${active === "projects" ? "text-purple-400 border-b-2 border-purple-400" : "text-white"}`}>Projetos</a>
+            <div className="flex gap-6 border border-blue-300 py-3 px-6 rounded-xl max-w-screen">
+              <a href="#index" className={`transition-all duration-300 ease-in-out text-blue-300 hover:text-blue-200 hover:border-b-2 ${active === "index" ? "text-blue-300 border-b-2 border-blue-300" : "text-white"}`}>Início</a>
+              <a href="#about" className={`transition-all duration-300 ease-in-out text-blue-300 hover:text-blue-200 hover:border-b-2 ${active === "about" ? "text-blue-300 border-b-2 border-blue-300" : "text-white"}`}>Sobre</a>
+              <a href="#skills" className={`transition-all duration-300 ease-in-out text-blue-300 hover:text-blue-200 hover:border-b-2 ${active === "skills" ? "text-blue-300 border-b-2 border-blue-300" : "text-white"}`}>Habilidades</a>
+              <a href="#projects" className={`transition-all duration-300 ease-in-out text-blue-300 hover:text-blue-200 hover:border-b-2 ${active === "projects" ? "text-blue-300 border-b-2 border-blue-300" : "text-white"}`}>Projetos</a>
             </div>
 
           </div>
