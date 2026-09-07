@@ -1,73 +1,73 @@
-  import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
-  const SimpleNavbar = () => {
-    const [scrolled, setScrolled] = useState(false);
-    const [animate, setAnimate] = useState(false);
+const SimpleNavbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+  const [animate, setAnimate] = useState(false);
 
-    const [active, setActive] = useState("");
+  const [active, setActive] = useState("");
 
-    useEffect(() => {
+  useEffect(() => {
 
-      setAnimate(true)
+    setAnimate(true)
 
-      const sections = document.querySelectorAll("header, section");
+    const sections = document.querySelectorAll("header, section");
 
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              setActive(entry.target.id);
-            }
-          });
-        },
-        {
-          threshold: 0.3,
-          rootMargin: "-80px 0px 0px 0px",
-        }
-      );
-
-      sections.forEach((section) => {
-        observer.observe(section);
-      });
-
-      return () => {
-        sections.forEach((section) => {
-          observer.unobserve(section);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActive(entry.target.id);
+          }
         });
-      };
-    }, []);
-
-
-    useEffect(() => {
-      const handleScroll = () => {
-        if (window.scrollY >= 180) {
-          setScrolled(true);
-        } else {
-          setScrolled(false);
-        }
-      };
-
-      window.addEventListener("scroll", handleScroll);
-
-      return () => window.removeEventListener("scroll", handleScroll)
-    }, []);
-
-    return (
-      <nav className={`${scrolled ? "bg-gray-900" : "bg-gray-900/10 pt-5"} ${animate ? 'fade-in-up' : 'opacity-0'} fixed top-0 w-screen z-50 transition-all duration-350 ease-in-out`}>
-        <div className="px-4">
-          <div className="flex justify-center items-center h-20">
-
-            <div className="flex gap-6 border border-blue-300 py-3 px-6 rounded-xl max-w-screen">
-              <a href="#index" className={`transition-all duration-300 ease-in-out text-blue-300 hover:text-blue-200 hover:border-b-2 ${active === "index" ? "text-blue-300 border-b-2 border-blue-300" : "text-white"}`}>Início</a>
-              <a href="#about" className={`transition-all duration-300 ease-in-out text-blue-300 hover:text-blue-200 hover:border-b-2 ${active === "about" ? "text-blue-300 border-b-2 border-blue-300" : "text-white"}`}>Sobre</a>
-              <a href="#skills" className={`transition-all duration-300 ease-in-out text-blue-300 hover:text-blue-200 hover:border-b-2 ${active === "skills" ? "text-blue-300 border-b-2 border-blue-300" : "text-white"}`}>Habilidades</a>
-              <a href="#projects" className={`transition-all duration-300 ease-in-out text-blue-300 hover:text-blue-200 hover:border-b-2 ${active === "projects" ? "text-blue-300 border-b-2 border-blue-300" : "text-white"}`}>Projetos</a>
-            </div>
-
-          </div>
-        </div>
-      </nav>
+      },
+      {
+        threshold: 0.1,
+        rootMargin: "-80px 0px -40% 0px",
+      }
     );
-  };
 
-  export default SimpleNavbar;
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        observer.unobserve(section);
+      });
+    };
+  }, []);
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 180) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, []);
+
+  return (
+    <nav className={`${scrolled ? "bg-gray-900" : "bg-gray-900/10 pt-5"} ${animate ? 'fade-in-up' : 'opacity-0'} fixed top-0 w-screen z-50 transition-all duration-350 ease-in-out`}>
+      <div className="px-4">
+        <div className="flex justify-center items-center h-20">
+
+          <div className="flex gap-6 border border-blue-300 py-3 px-6 rounded-xl max-w-screen">
+            <a href="#index" className={`transition-all duration-300 ease-in-out text-blue-300 hover:text-blue-200 hover:border-b-2 ${active === "index" ? "text-blue-300 border-b-2 border-blue-300" : "text-white"}`}>Início</a>
+            <a href="#about" className={`transition-all duration-300 ease-in-out text-blue-300 hover:text-blue-200 hover:border-b-2 ${active === "about" ? "text-blue-300 border-b-2 border-blue-300" : "text-white"}`}>Sobre</a>
+            <a href="#skills" className={`transition-all duration-300 ease-in-out text-blue-300 hover:text-blue-200 hover:border-b-2 ${active === "skills" ? "text-blue-300 border-b-2 border-blue-300" : "text-white"}`}>Habilidades</a>
+            <a href="#projects" className={`transition-all duration-300 ease-in-out text-blue-300 hover:text-blue-200 hover:border-b-2 ${active === "projects" ? "text-blue-300 border-b-2 border-blue-300" : "text-white"}`}>Projetos</a>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default SimpleNavbar;

@@ -39,11 +39,16 @@ function App() {
             id="skills"
             children={
               <div className="overflow-hidden">
-                <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-                  <div className="flex w-max animate-infinite-slider gap-4">
+                <div className="relative w-full overflow-hidden md:[mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+                  
+                  <div className="md:flex md:w-max md:animate-infinite-slider md:gap-4 mt-4">
                     <Icons />
-                    <Icons />
+                    
+                    <div className="hidden md:block">
+                      <Icons />
+                    </div>
                   </div>
+                  
                 </div>
               </div>
             }
